@@ -16,9 +16,18 @@ if (!empty($_POST["btniniciar"])) {
         $resultado = $conexion->query($sql);
 
         if ($resultado->num_rows > 0) {
-            // Inicio de sesión exitoso, redirige al menú principal
-            header("Location: Menu.php");
-            exit(); // Asegura que no se procese más código después de la redirección
+            // Obtener la información del usuario
+            $usuario = $resultado->fetch_assoc();
+            $tipo_usuario = $usuario["correo"];
+
+            // Redirigir según el tipo de usuario
+            if (strpos($tipo_usuario, "Administrador") !== false) {
+                header("Location: Menu.php");
+                exit();
+            } else {
+                header("Location: MenuCliente.php");
+                exit();
+            }
         } else {
             echo '<div class="alert alert-danger">Correo o contraseña incorrectos. Por favor, inténtalo de nuevo.</div>';
         }

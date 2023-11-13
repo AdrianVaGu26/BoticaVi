@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menú de Farmacia</title>
-    <link rel="stylesheet" href="estilosmenu.css">
+    <link rel="stylesheet" href="/Estilos/estilosmenu.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:ital,wght@0,400;0,500;1,200&display=swap" rel="stylesheet">
 </head>
@@ -13,7 +13,7 @@
     VIDAFarma BOTICA-PERFUMERÍA</h3>
     <div class="search-container">
     <form method="GET">
-        <input type="text" placeholder="Buscar por nombre..." name="search">
+        <input type="text" placeholder="Buscar por nombre..." name="nombre">
         <button type="submit"><i class='bx bx-search'></i></button>
     </form>
 </div>
@@ -65,8 +65,9 @@
                         // Puedes agregar aquí el contenido específico para la Opción 2 (por ejemplo, lista de categorías)
                         break;
                         case 'opcion6':
-                            include 'Registros.php';
-                            echo '<h2>Categorías de Medicamentos</h2>';
+                            if (!isset($_GET['nombre'])) {
+                                include 'Registros.php';
+                            }
                             // Puedes agregar aquí el contenido específico para la Opción 2 (por ejemplo, lista de categorías)
                             break;
 

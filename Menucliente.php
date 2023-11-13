@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menú de Farmacia</title>
-    <link rel="stylesheet" href="estilosmenu.css">
+    <link rel="stylesheet" href="/Estilos/estilosmenu.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:ital,wght@0,400;0,500;1,200&display=swap" rel="stylesheet">
 </head>
@@ -23,7 +23,7 @@
         <a href="?opcion=opcion2"><i class='bx bxs-bar-chart-alt-2'></i>Carrito de compras</a>
         <a href="?opcion=opcion7"><i class='bx bxs-category'></i>Categorías</a>
         <a href="?opcion=opcion8"><i class='bx bxs-offer'></i>Ofertas</a>
-        <a href="cerrar_sesion.php"><i class='bx bxs-log-out'></i>Cerrar Sesión</a>
+        <a href="cerrar_sesioncliente.php"><i class='bx bxs-log-out'></i>Cerrar Sesión</a>
 </nav>
 
 
