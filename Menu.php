@@ -12,9 +12,11 @@
     <h3 class="icon-title"><i class='bx bx-plus-medical'></i>
     VIDAFarma BOTICA-PERFUMERÍA</h3>
     <div class="search-container">
-        <input type="text" placeholder="Buscar..." name="search">
+    <form method="GET">
+        <input type="text" placeholder="Buscar por nombre..." name="search">
         <button type="submit"><i class='bx bx-search'></i></button>
-    </div>
+    </form>
+</div>
 </header>
 
 <body>
