@@ -1,0 +1,33 @@
+.contenedor {
+    display: flex;
+    width: 100%; /* Ocupa todo el ancho de la página */
+}
+
+.sobre,
+.encuentranos,
+.seccion {
+    flex: 1;
+    text-align: left;
+    margin-right: 20px; /* Márgenes entre los elementos */
+}
+
+.seccion {
+    margin-right: 0; /* Elimina el margen derecho del último elemento */
+}
+
+.titulo-secciones,
+.titulo-encuentranos,
+.titulo-seccion {
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.nosotros a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.nosotros a:hover {
+    text-decoration: underline;
+}
