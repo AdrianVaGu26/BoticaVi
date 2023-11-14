@@ -75,12 +75,38 @@
                 break;
 
         default:#ffffff
-            echo '<h2>Bienvenido a la Farmacia</h2>';
-            // Puedes agregar aquí el contenido predeterminado
-            break;
+        echo '<div class="bienvenida">
+                <h2>Bienvenido a la Farmacia VIDAFarma</h2>
+                <p>Servicio de calidad y productos confiables para tu salud.</p>
+              </div>';
+        
+        // Agrega aquí la información adicional sobre la botica, números telefónicos, redes sociales, etc.
+        echo '<div class="informacion">
+                <p>Dirección: La nueva providencia-MzA-Lt19 </p>
+                <p>WhatsApp: <a href="https://wa.me/985025973"><i class="bx bxl-whatsapp"></i> Envíanos un mensaje</a></p>
+              </div>';
+        break;
+    
     }
     ?>
-</section>
+    <!-- Información de Métodos de Pago -->
+    <div class="informacion-derecha">
+        <div class="metodos-pago">
+        <h3 class="titulo-metodos-pago">Medios de Pago</h3>
+<ul>
+    <li data-tooltip="Visa"><i class='bx bxl-visa'></i></li>
+    <li data-tooltip="Mastercard"><i class='bx bxl-mastercard'></i></li>
+    <li data-tooltip="Efectivo"><i class='bx bx-money'></i></li>
+    <!-- Agrega más métodos de pago según sea necesario -->
+</ul>
+        </div>
 
+        <!-- Información de Derechos de Autor -->
+        <div class="derechos-autor">
+            <p>BOTICAS IP S.A.C. - R.U.C. N° 20608430301
+            Copyright © Mifarma 2020 Todos los derechos reservados.</p>
+        </div>
+    </div>
+</section>
 </body>
 </html>

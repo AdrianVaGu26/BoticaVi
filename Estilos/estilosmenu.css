@@ -127,3 +127,135 @@ h2 {
     margin-top: 10px; /* Espacio entre h3 y h2 */
     /* Otros estilos para h2 si es necesario */
 }
+.bienvenida {
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #ddd; /* Línea divisoria */
+}
+
+.informacion a {
+    color: #25D366; /* Color verde de WhatsApp */
+    text-decoration: none;
+    padding-left: 5px;
+}
+
+.informacion a:hover {
+    text-decoration: underline; /* Subrayar al pasar el mouse */
+}
+.informacion a i.bxl-whatsapp {
+    font-size: 24px; /* Ajusta el tamaño del icono según tus preferencias */
+    vertical-align: middle; /* Alinea verticalmente el icono con el texto */
+    margin-right: 5px; /* Agrega un pequeño margen a la derecha del icono para separarlo del texto */
+}
+
+/* Estilos adicionales para el diseño */
+.informacion-derecha {
+    text-align: center; /* Centrar el contenido */
+    margin-top: 20px; /* Espacio superior */
+}
+
+.metodos-pago {
+    display: inline-block; /* Alinear en línea con los derechos de autor */
+    text-align: left; /* Alinear el texto a la izquierda */
+    margin-right: 20px; /* Margen derecho para separar del contenido de derechos de autor */
+}
+
+/* Estilos para los derechos de autor */
+.derechos-autor {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    /*background-color: #f0f0f0; /* Color de fondo, ajusta según tus preferencias */
+}
+
+.bx {
+    margin-right: 5px;
+}
+
+
+.metodos-pago ul {
+    list-style: none;
+    padding: 0;
+    font-size: 24px;
+}
+
+.metodos-pago li {
+    margin-bottom: 5px;
+    font-size: 30px;
+}
+
+.bx {
+    margin-right: 5px;
+}
+
+/* Agrega estos estilos a estilosmenu.css */
+
+.metodos-pago ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.metodos-pago li {
+    display: inline-block;
+    margin-right: 15px;
+    background-color: #05426b; /* Color de fondo para los elementos li */
+    padding: 5px 10px;
+    color: #a40909; /* Color del texto */
+    border-radius: 5px; /* Bordes redondeados */
+    margin-top: 15px;
+    
+}
+.titulo-metodos-pago {
+    margin-top: 15px;
+    text-align: left;
+    /* Otros estilos que desees aplicar al título */
+}
+.bxl-visa{
+    color:#fbfffc;
+}
+.bx-money{
+    color:rgba(234, 255, 0, 0.986);
+}
+/* Otros estilos para ajustar el diseño según sea necesario */
+
+.informacion-derecha {
+    text-align: right; /* Alinea el contenido a la derecha */
+}
+
+.titulo-metodos-pago {
+    margin-top: 15px;
+    margin-right: 20px; /* Ajusta el margen derecho según sea necesario */
+}
+
+.metodos-pago ul {
+    list-style: none; /* Quita los estilos de lista por defecto */
+    padding: 0; /* Elimina el relleno interior de la lista */
+}
+
+.metodos-pago li {
+    display: inline-block; /* Muestra los elementos en línea (uno al lado del otro) */
+    margin-right: 10px; /* Espaciado entre los elementos li */
+    position: relative; 
+}
+
+/* Estilo para el tooltip */
+.metodos-pago li:hover::before {
+    content: attr(data-tooltip); /* Contenido del tooltip */
+    position: absolute;
+    background-color: rgb(131, 196, 224); /* Color de fondo */
+    color: #ffffff; /* Color del texto */
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px; /* Bordes redondeados */
+    bottom: 125%; /* Coloca el tooltip arriba del li */
+    left: 50%; /* Centra el tooltip sobre el li */
+    transform: translateX(-50%); /* Centra el tooltip horizontalmente */
+    opacity: 0; /* Inicialmente invisible */
+    transition: opacity 0.3s ease; /* Agrega una transición de fade-in */
+}
+
+.metodos-pago li:hover::before {
+    opacity: 1; /* Hace visible el tooltip al pasar el cursor sobre el li */
+}
