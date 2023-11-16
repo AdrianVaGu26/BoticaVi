@@ -99,15 +99,14 @@
                             </ul>
                         </div>';
 
-            // Información de Derechos de Autor
-            echo '<div class="derechos-autor">
-                    <p>BOTICAS IP S.A.C. - R.U.C. N° 20608430301
-                    Copyright © Mifarma 2020 Todos los derechos reservados.</p>
-                  </div>
-                </div>';
             break;
     }
     ?>
 </section>
+<!-- Bloque de derechos de autor -->
+<div class="derechos-autor">
+    <p>BOTICAS IP S.A.C. - R.U.C. N° 20608430301
+    Copyright © Mifarma 2020 Todos los derechos reservados.</p>
+</div>
 </body>
 </html>

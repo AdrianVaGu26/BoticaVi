@@ -157,15 +157,6 @@ h2 {
     margin-right: 20px; /* Margen derecho para separar del contenido de derechos de autor */
 }
 
-/* Estilos para los derechos de autor */
-.derechos-autor {
-    text-align: center;
-    margin-top: 50px;
-    padding: 20px;
-    /*background-color: #f0f0f0; /* Color de fondo, ajusta según tus preferencias */
-}
-
-
 /*WHATSAPP-------------------------------------------->*/
 .whatsapp {
     margin-bottom: 40%; /* Añade espacio debajo del título */
