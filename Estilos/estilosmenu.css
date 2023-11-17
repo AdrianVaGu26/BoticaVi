@@ -149,18 +149,10 @@ h2 {
     margin-right: 5px; /* Agrega un pequeño margen a la derecha del icono para separarlo del texto */
 }
 
-/* Estilos adicionales para el diseño */
-
-.metodos-pago {
-    display: inline-block; /* Alinear en línea con los derechos de autor */
-    text-align: left; /* Alinear el texto a la izquierda */
-    margin-right: 20px; /* Margen derecho para separar del contenido de derechos de autor */
-}
-
 /*WHATSAPP-------------------------------------------->*/
 .whatsapp {
     margin-bottom: 40%; /* Añade espacio debajo del título */
-    text-align: left;
+    text-align: center;
     margin-bottom:0cqmin;
     margin: 5px 0 5px 20px;
 }

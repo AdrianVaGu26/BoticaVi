@@ -1,0 +1,104 @@
+/*-------------TABLA-------------------------------------------*/
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    padding: 50px;
+    padding-top: 30px;
+    background-color: aliceblue;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/* Estilo para la primera tabla */
+#tabla-personas {
+    margin-bottom: 20px; /* Margen en la parte inferior */
+}
+
+/* Estilo para la segunda tabla */
+#tabla-usuarios {
+    margin-top: 20px; /* Margen en la parte superior */
+}
+
+/* Estilo para la tabla */
+.table {
+    border-radius: 10px; /* Bordes redondeados */
+    overflow: hidden; /* Evitar que los bordes redondeados afecten a las celdas internas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para resaltar la tabla */
+    border: 1px solid #ddd; /* Borde delgado para separación */
+}
+
+.table th, .table td {
+    border: 1px solid #dee2e6; /* Borde para celdas */
+    padding: 8px; /* Espaciado interno */
+    text-align: center; /* Centrar el contenido */
+}
+
+.table thead th {
+    background-color: rgb(69, 102, 160); /* Color de fondo para los encabezados de la tabla */
+    color: white; /* Color del texto en los encabezados de la tabla */
+}
+
+.table-info th, .table-info td {
+    background-color: #d1ecf1; /* Color de fondo para las filas con clase 'table-info' */
+}
+
+.btn {
+    margin-right: 5px; /* Espaciado entre los botones */
+}
+
+.container-fluid {
+    max-width: 1200px; /* Ancho máximo para el contenedor fluido */
+    margin: 0 auto; /* Centrar el contenedor */
+}
+.table-hover tbody tr:hover {
+    background-color: #799ea9; /* Color de fondo al pasar el cursor sobre la fila */
+    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+}
+
+/* ------------------------------------------------*/
+.btn-info{
+    border: 1px solid #007bff; /* Añade un borde sólido con el color azul */
+    color: #007bff; /* Color del texto */
+}
+.btn-danger{
+    border: 1px solid #ff0000; /* Añade un borde sólido con el color azul */
+    color: #ff0000; /* Color del texto */
+}
+/* Estilo para los enlaces */
+.btn-info,
+.btn-danger {
+    text-decoration: none; /* Elimina el subrayado predeterminado */
+    padding: 8px 15px; /* Ajusta el espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s, color 0.3s; /* Transición suave al cambiar el color de fondo y el texto */
+}
+
+/* Estilo al pasar el cursor por encima del enlace */
+.btn-info:hover{
+    background-color: #007bff; /* Cambia el color de fondo al azul al pasar el cursor */
+    color: #fff; /* Cambia el color del texto a blanco */
+}
+.btn-danger:hover {
+    background-color: #ff0015; /* Cambia el color de fondo al azul al pasar el cursor */
+    color: #ffffff; /* Cambia el color del texto a blanco */
+}
+
+/* Separación y alineación horizontal de los botones */
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px; /* Ajusta el margen superior según sea necesario */
+}
+
+/* Estilo para el encabezado h3 con clase text-secondary */
+h3.text-secondary {
+    color: #02090e; /* Color de texto gris oscuro */
+    font-size: 24px; /* Tamaño de fuente */
+    margin-bottom: 20px; /* Margen inferior para separación */
+    text-align: center; /* Alineación centrada */
+}
+

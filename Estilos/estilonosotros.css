@@ -7,8 +7,8 @@
 .encuentranos,
 .seccion {
     flex: 1;
-    text-align: left;
-    margin-right: 20px; /* Márgenes entre los elementos */
+    text-align: center;
+    margin-right: 10px; /* Márgenes entre los elementos */
 }
 
 .seccion {
@@ -20,6 +20,7 @@
 .titulo-seccion {
     color: #333;
     font-size: 1.5em;
+    text-align: center;
     margin-bottom: 10px;
 }
 

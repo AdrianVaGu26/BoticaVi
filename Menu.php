@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menú de Farmacia</title>
+    <title>Menú de Botica</title>
     <link rel="stylesheet" href="/Estilos/estilosmenu.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:ital,wght@0,400;0,500;1,200&display=swap" rel="stylesheet">
@@ -21,14 +21,13 @@
 
 <body>
 <nav>
-<a href="?opcion=opcion1"><i class='bx bxs-capsule'></i>Medicamentos</a>
+       <a href="?opcion=opcion1"><i class='bx bxs-capsule'></i>Medicamentos</a>
         <a href="?opcion=opcion2"><i class='bx bxs-bar-chart-alt-2'></i>Ventas</a>
         <a href="?opcion=opcion3"><i class='bx bxs-truck'></i>Proveedores</a>
-        <a href="?opcion=opcion4"><i class='bx bxs-user'></i>Clientes</a>
-        <a href="?opcion=opcion5"><i class='bx bxs-file'></i>Reportes</a>
-        <a href="?opcion=opcion6"><i class='bx bxs-group'></i>Usuarios</a>
-        <a href="?opcion=opcion7"><i class='bx bxs-category'></i>Categorías</a>
-        <a href="?opcion=opcion8"><i class='bx bxs-offer'></i>Ofertas</a>
+        <a href="?opcion=opcion4"><i class='bx bxs-file'></i>Reportes</a>
+        <a href="?opcion=opcion5"><i class='bx bxs-group'></i>Usuarios</a>
+        <a href="?opcion=opcion6"><i class='bx bxs-category'></i>Categorías</a>
+        <a href="?opcion=opcion7"><i class='bx bxs-offer'></i>Ofertas</a>
         <a href="cerrar_sesion.php"><i class='bx bxs-log-out'></i>Cerrar Sesión</a>
 </nav>
 
@@ -54,28 +53,23 @@
                 echo '<h2>Categorías de Medicamentos</h2>';
                 // Puedes agregar aquí el contenido específico para la Opción 2 (por ejemplo, lista de categorías)
                 break;
-                case 'opcion4':
-            
-                    echo '<h2>Categorías de Medicamentos</h2>';
-                    // Puedes agregar aquí el contenido específico para la Opción 2 (por ejemplo, lista de categorías)
-                    break;
-                    case 'opcion5':
+                    case 'opcion4':
             
                         echo '<h2>Categorías de Medicamentos</h2>';
                         // Puedes agregar aquí el contenido específico para la Opción 2 (por ejemplo, lista de categorías)
                         break;
-                        case 'opcion6':
+                        case 'opcion5':
                             if (!isset($_GET['nombre'])) {
                                 include 'Registros.php';
                             }
                             // Puedes agregar aquí el contenido específico para la Opción 2 (por ejemplo, lista de categorías)
                             break;
 
-        case 'opcion7':
+        case 'opcion6':
             echo '<h2>Ofertas Especiales</h2>';
             // Puedes agregar aquí el contenido específico para la Opción 3 (por ejemplo, ofertas especiales)
             break;
-            case 'opcion8':
+            case 'opcion7':
             
                 echo '<h2>Categorías de Medicamentos</h2>';
                 // Puedes agregar aquí el contenido específico para la Opción 2 (por ejemplo, lista de categorías)

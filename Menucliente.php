@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/Estilos/estiloencu.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:ital,wght@0,400;0,500;1,200&display=swap" rel="stylesheet">
+    <script src="/JavaScript/Cursor.js"></script>
 </head>
 <body>
 <header>
@@ -61,10 +62,9 @@
 
         default:
             echo '<div class="bienvenida">
-                    <h2>Bienvenido a la Farmacia VIDAFarma</h2>
+                    <h2>Bienvenido VidaFarma</h2>
                     <p>Servicio de calidad y productos confiables para tu salud.</p>
-                  </div>';
-
+    </div>';
             echo '<div class="contenedor">
                     <div class="sobre">
                         <h3 class="titulo-secciones">Sobre Nosotros</h3>
@@ -83,6 +83,7 @@
             echo '<div class="seccion">
                         <h3 class="titulo-seccion">Contáctanos</h3>
                         <div class="contacto">
+                        <p class="whatsapp"><i class="bx bxs-phone"></i></a>Telefono: 073-321250</p>
                             <p class="whatsapp">WhatsApp: <a href="https://wa.me/985025973"><i class="bx bxl-whatsapp"></i> Envíanos un mensaje</a></p>
                         </div>
                     </div>';
@@ -105,8 +106,8 @@
 </section>
 <!-- Bloque de derechos de autor -->
 <div class="derechos-autor">
-    <p>BOTICAS IP S.A.C. - R.U.C. N° 20608430301
-    Copyright © Mifarma 2020 Todos los derechos reservados.</p>
+    <p>BOTICAS IP S.A.C. - R.U.C. N° 10423237401
+    Copyright © VidaFarma 2020 Todos los derechos reservados.</p>
 </div>
 </body>
 </html>
