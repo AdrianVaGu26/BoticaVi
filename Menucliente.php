@@ -30,10 +30,10 @@
 </header>
 
 <nav>
-    <a href="?opcion=opcion1"><i class='bx bxs-capsule'></i>Medicamentos</a>
+    <a href="tiendaonline.php"><i class='bx bxs-capsule'></i>Medicamentos</a>
     <a href="?opcion=opcion2"><i class='bx bxs-bar-chart-alt-2'></i>Carrito de compras</a>
-    <a href="?opcion=opcion7"><i class='bx bxs-category'></i>Categorías</a>
-    <a href="?opcion=opcion8"><i class='bx bxs-offer'></i>Ofertas</a>
+    <a href="?opcion=opcion3"><i class='bx bxs-category'></i>Categorías</a>
+    <a href="?opcion=opcion4"><i class='bx bxs-offer'></i>Ofertas</a>
     <a href="cerrar_sesioncliente.php"><i class='bx bxs-log-out'></i>Cerrar Sesión</a>
 </nav>
 
@@ -53,10 +53,55 @@
             // Puedes agregar aquí el contenido específico para la Opción 2 (por ejemplo, lista de categorías)
             break;
 
-        case 'opcion3':
-            echo '<h2>Categorías de Medicamentos</h2>';
-            // Puedes agregar aquí el contenido específico para la Opción 3
-            break;
+            case 'opcion3':
+                echo '<h2>Categorías de Medicamentos</h2>';
+                echo '<div class="category-cards">
+                        <div class="category-card" onclick="mostrarMedicamentos()">
+                            <i class="bx bxs-pill"></i>
+                            <h3>Medicamentos</h3>
+                        </div>
+                        <div class="category-card">
+                            <i class="bx bxs-lotion"></i>
+                            <h3>Cuidado de la Piel</h3>
+                        </div>
+                        <div class="category-card">
+                            <i class="bx bxs-flask"></i>
+                            <h3>Suplementos</h3>
+                        </div>
+                        <div class="category-card">
+                            <i class="bx bxs-spa"></i>
+                            <h3>Salud y Bienestar</h3>
+                        </div>
+                        <!-- Agrega más tarjetas según tus categorías -->
+                      </div>';
+            
+                // Agrega un contenedor para mostrar los productos de la categoría "Medicamentos"
+                echo '<div id="medicamentos-container"></div>';
+            
+                // Agrega un script para mostrar u ocultar los productos al hacer clic en la categoría "Medicamentos"
+                echo '<!-- Agrega esto en el lugar apropiado de tu archivo principal -->
+                <script>
+                    var xhttp = new XMLHttpRequest();
+                    
+                    // Configurar manejo de errores
+                    xhttp.onerror = function() {
+                        console.error("Error en la solicitud AJAX");
+                    };
+                    
+                    // Realizar la solicitud AJAX
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState == 4 && this.status == 200) {
+                            // Manipula la respuesta aquí
+                            console.log(this.responseText);
+                        }
+                    };
+                    
+                    // Abrir y enviar la solicitud
+                    xhttp.open("GET", "mostrar_medicamentos.php", true);
+                    xhttp.send();
+                </script>';
+                break;
+            
 
         // Agrega más casos según sea necesario
 
@@ -107,7 +152,7 @@
 <!-- Bloque de derechos de autor -->
 <div class="derechos-autor">
     <p>BOTICAS IP S.A.C. - R.U.C. N° 10423237401
-    Copyright © VidaFarma 2020 Todos los derechos reservados.</p>
+    Copyright © VidaFarma 2023 Todos los derechos reservados.</p>
 </div>
 </body>
 </html>

@@ -76,3 +76,29 @@
     border-radius: 5px; /* Bordes redondeados */
 }
 
+/*---------------CATEGORIA--------------------------------*/
+.category-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.category-card {
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #f4ebeb;
+    transition: background-color 0.3s ease;
+}
+
+.category-card:hover {
+    background-color: #e0e0e0;
+}
+
+.category-card i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
