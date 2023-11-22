@@ -15,7 +15,7 @@
         body {
             padding: 100px;
             padding-top: 30px;
-            background-image: url('https://crehana-blog.s3.amazonaws.com/media/filer_public/82/a7/82a757bb-081c-4fec-bf4e-ba46ba9925ba/fondos-pantalla-pc-3d-2.png'); /* Ruta de la imagen de fondo */
+            background-image: url(''); /* Ruta de la imagen de fondo */
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -36,29 +36,37 @@
         <h3 class="text-center text-secundary">Registro de personas</h3>
         <?php
 
-        include "controlador/registro_persona.php";
+        include "controlador/registro_medicamentos.php";
         ?>
             <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Nombre de la persona</label>
+                <label for="exampleInputEmail1" class="form-label">Nombre del Medicamento</label>
                 <input type="text" class="form-control" name="nombre">
             </div>
             <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Apellido de la persona</label>
-                <input type="text" class="form-control" name="apellido">
+                <label for="exampleInputEmail1" class="form-label">Descripción</label>
+                <input type="text" class="form-control" name="descripcion">
             </div>
             <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">DNI de la persona</label>
-                <input type="text" class="form-control" name="dni">
+                <label for="exampleInputEmail1" class="form-label">Precio</label>
+                <input type="text" class="form-control" name="precio">
             </div>
             <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Fecha de Nacimiento</label>
-                <input type="date" class="form-control" name="fecha">
+                <label for="exampleInputEmail1" class="form-label">Descuento</label>
+                <input type="text" class="form-control" name="descuento">
             </div>
             <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Correo</label>
-                <input type="text" class="form-control" name="correo">
+                <label for="exampleInputEmail1" class="form-label">Activo</label>
+                <input type="text" class="form-control" name="activo">
             </div>
-            <button type="submit" class="btn btn-primary" name="btnregistrar" value="Ok">Registrar</button>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Fecha Vencimiento</label>
+                <input type="date" class="form-control" name="fecha_vencimiento">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Stock</label>
+                <input type="text" class="form-control" name="stock">
+            </div>
+            <button type="submit" class="btn btn-primary" name="btnregistrarmedicamentos" value="Ok">Registrar</button>
         </form>
 
         <div class="col-8 p-4">
