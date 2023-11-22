@@ -32,9 +32,10 @@
                     <input type="text" class="form-control"  name="apellido">
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">DNI de la persona</label>
-                    <input type="text" class="form-control"  name="dni">
-                </div>
+    <label for="dni" class="form-label">DNI de la persona</label>
+    <input type="text" class="form-control" name="dni" pattern="[0-9]{8}" title="Ingrese un DNI válido de 8 dígitos" maxlength="8" required>
+</div>
+
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Fecha de Nacimiento</label>
                     <input type="date" class="form-control"  name="fecha">
@@ -44,9 +45,24 @@
                     <input type="email" class="form-control" name="correo">
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Contraseña</label>
-                    <input type="password" class="form-control" name="contraseña">
-                </div>
+    <label for="contraseña" class="form-label">Contraseña</label>
+    <div class="input-group">
+        <input type="password" class="form-control" name="contraseña" id="passwordInput" required>
+        <button class="btn btn-outline-secondary" type="button" id="togglePassword">Mostrar</button>
+    </div>
+</div>
+
+<script>
+document.getElementById("togglePassword").addEventListener("click", function () {
+    var passwordInput = document.getElementById("passwordInput");
+    if (passwordInput.type === "password") {
+        passwordInput.type = "text";
+    } else {
+        passwordInput.type = "password";
+    }
+});
+</script>
+
                 <center>
                 <button type="submit" class="btn btn-primary" name="btnregistrar" value="Ok">Registrar</button>
                 </center>

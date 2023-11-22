@@ -31,9 +31,8 @@
 
 <nav>
     <a href="tiendaonline.php"><i class='bx bxs-capsule'></i>Medicamentos</a>
-    <a href="?opcion=opcion2"><i class='bx bxs-bar-chart-alt-2'></i>Carrito de compras</a>
-    <a href="?opcion=opcion3"><i class='bx bxs-category'></i>Categorías</a>
-    <a href="?opcion=opcion4"><i class='bx bxs-offer'></i>Ofertas</a>
+    <a href="?opcion=opcion2"><i class='bx bxs-category'></i>Categorías</a>
+    <a href="?opcion=opcion3"><i class='bx bxs-offer'></i>Ofertas</a>
     <a href="cerrar_sesioncliente.php"><i class='bx bxs-log-out'></i>Cerrar Sesión</a>
 </nav>
 
@@ -43,11 +42,7 @@
 
     // Mostrar contenido según la opción seleccionada
     switch ($opcion) {
-        case 'opcion1':
-            echo '<h2>Lista de Medicamentos</h2>';
-            // Puedes agregar aquí el contenido específico para la Opción 1 (por ejemplo, lista de medicamentos)
-            break;
-
+        
         case 'opcion2':
             echo '<h2>Categorías de Medicamentos</h2>';
             // Puedes agregar aquí el contenido específico para la Opción 2 (por ejemplo, lista de categorías)

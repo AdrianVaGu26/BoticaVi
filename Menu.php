@@ -29,7 +29,6 @@
         <a href="?opcion=opcion4"><i class='bx bxs-file'></i>Reportes</a>
         <a href="?opcion=opcion5"><i class='bx bxs-group'></i>Usuarios</a>
         <a href="?opcion=opcion6"><i class='bx bxs-category'></i>Categorías</a>
-        <a href="?opcion=opcion7"><i class='bx bxs-offer'></i>Ofertas</a>
         <a href="cerrar_sesion.php"><i class='bx bxs-log-out'></i>Cerrar Sesión</a>
 </nav>
 
@@ -178,12 +177,6 @@
                     </div>
                     <!-- Agrega más tarjetas según tus categorías -->
                   </div>';
-            case 'opcion7':
-            
-                echo '<h2>Categorías de Medicamentos</h2>';
-                // Puedes agregar aquí el contenido específico para la Opción 2 (por ejemplo, lista de categorías)
-                break;
-
         default:#ffffff
             echo '<h2>Bienvenido a la Farmacia</h2>';
             // Puedes agregar aquí el contenido predeterminado

@@ -1,0 +1,33 @@
+/* Estilos para el contenedor del carrito */
+.container {
+    margin-top: 20px;
+}
+
+/* Estilos para los detalles de cada producto en el carrito */
+div {
+    border: 1px solid #3498db; /* Borde azul */
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px; /* Esquinas redondeadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sutil sombra */
+}
+
+/* Estilos para el botón de confirmar compra */
+button {
+    padding: 15px;
+    background-color: #28a745; /* Verde brillante */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; /* Esquinas redondeadas */
+    transition: background-color 0.3s ease; /* Transición suave al pasar el ratón */
+}
+
+button:hover {
+    background-color: #218838; /* Cambia el color al pasar el ratón */
+}
+
+/* Íconos de Font Awesome */
+.fa {
+    margin-right: 10px;
+}
