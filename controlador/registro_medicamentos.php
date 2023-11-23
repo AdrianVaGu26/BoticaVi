@@ -12,8 +12,8 @@ AND !empty($_POST["fecha_vencimiento"])AND !empty($_POST["stock"])){
          $fecha_vencimiento=$_POST["fecha_vencimiento"];
          $stock = $_POST["stock"];
      
-         $sql = $conexion->query("insert into medicamentos(nombre,apellido,dni,fecha_nac,correo)
-         values ('$nombre','$apellido','$dni','$fecha','$correo')");
+         $sql = $conexion->query("insert into medicamentos(nombre,descripcion,precio,descuento,activo,fecha_vencimiento,stock)
+         values ('$nombre','$descuento','$precio','$descuento','$activo','$fecha_vencimiento','$stock')");
          if($sql==1) 
          {
             echo '<div class="alert alert-success"> Persona Registrada correctamente</div>';

@@ -1,3 +1,6 @@
+
+
+
 /* Estilos generales */
 html, body {
     height: 100%;
@@ -25,12 +28,15 @@ body {
 }
 
 .login-form {
-    background-color: #f0f0f0;
+    background: url('https://7oom.ru/powerpoint/fony-dlya-prezentacii-po-biologii-02.jpg') no-repeat 0px 0px;
+    background-size: cover;
+    background-position: center;
+   /* background-color: #f0f0f0;*/
     border-radius: 20px;
     padding: 40px;
     font-family: "Arial", sans-serif; /* Cambia la fuente del texto */
     margin-top: 30px; /* Agrega margen superior para desplazar el formulario hacia abajo */
-    color: rgb(5, 74, 135); /* Color del texto blanco */
+    color: rgb(244, 245, 245); /* Color del texto blanco */
 }
 
 /* Estilo para alinear iconos junto a los campos de entrada */
@@ -45,13 +51,13 @@ i.bx {
     margin-right: 10px; /* Espacio entre el icono y el campo de entrada */
 }
 .mb-3 i.bx {
-    color: #000; /* Color negro para los iconos */
+    color: #fffafa; /* Color negro para los iconos */
     font-size: 20px; /* Tamaño de fuente de los iconos */
 }
 
 /* Estilos para el título "Bienvenido" */
 h2 {
-    color: #074e95; /* Color del título */
+    color: rgb(255, 255, 255); /* Color del título */
     font-size: 30px; /* Tamaño de fuente del título */
     font-family: 'Montserrat', sans-serif;
     font-family: 'Poppins', sans-serif;
@@ -59,7 +65,7 @@ h2 {
 
 /* Estilos para el párrafo */
 p {
-    color: #998888; /* Color del texto del párrafo */
+    color: #ffffff; /* Color del texto del párrafo */
     font-size: 16px; /* Tamaño de fuente del párrafo */
     margin-bottom: 20px; /* Espacio inferior del párrafo */
     font-family: 'Poppins', sans-serif;
@@ -77,14 +83,14 @@ p {
 
 /* Estilo para el enlace "Crear cuenta" */
 .create-account-link {
-    color: #09148f;
+    color: #000000;
     text-decoration: none;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
 }
 
 .create-account-link a {
-    color: #09148f;
+    color: #0a1214;
     text-decoration: none;
 }
 

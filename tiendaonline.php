@@ -27,10 +27,10 @@ session_destroy();
 
  <!-- Menu de navegación -->
  <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container">
             <a href="tiendaonline.php" class="navbar-brand"> 
-                <strong>Tienda de medicamentos</strong>
+                <strong>Medicamentos</strong>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navBarTop" aria-controls="navBarTop" aria-expanded="false">
                 <span class="navbar-toggler-icon"></span>
@@ -79,7 +79,7 @@ session_destroy();
                                         hash_hmac('sha1', $row['id'], KEY_TOKEN); ?>" class="btn btn-primary">Detalles</a>
                                     </div>
                                     <button class="btn btn-outline-success" type="button" onclick="addProducto
-                                    (<?php echo $row['id']; ?>, '<?php echo hash_hmac('sha1', $row['id'], KEY_TOKEN); ?>')">Agregar </button>
+                                    (<?php echo $row['id']; ?>, '<?php echo hash_hmac('sha1', $row['id'], KEY_TOKEN); ?>')">Agregar al Carrito </button>
                                     </div>
                         </div>
                        </div>

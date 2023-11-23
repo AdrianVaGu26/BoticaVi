@@ -1,0 +1,39 @@
+/* Agregar estilos según sea necesario */
+.recovery-form-container {
+    margin: 20px;
+}
+
+.recovery-form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+}
+
+.recovery-form h2 {
+    color: #007bff;
+}
+
+.recovery-form p {
+    color: #6c757d;
+}
+
+.recovery-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.recovery-form button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.recovery-form button:hover {
+    background-color: #0056b3;
+}

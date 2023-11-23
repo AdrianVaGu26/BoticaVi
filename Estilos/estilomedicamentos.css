@@ -1,0 +1,48 @@
+/* Agrega tus estilos personalizados aquí */
+body {
+    background-color: #f5f5f5; /* Color de fondo del cuerpo */
+}
+
+header {
+    background-color: #ffffff; /* Color de fondo del encabezado */
+    padding: 10px 0; /* Ajuste de relleno */
+}
+
+.navbar-brand {
+    font-size: 1.5rem; /* Tamaño del texto del logo */
+}
+
+.navbar-toggler-icon {
+    background-color: #fff; /* Color del icono del botón de menú en dispositivos pequeños */
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #fff; /* Color del texto del enlace en la barra de navegación */
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #28a745; /* Color del texto del enlace al pasar el ratón */
+}
+
+.btn-primary {
+    background-color: #28a745; /* Color del botón "Agregar al Carrito" */
+    border-color: #28a745; /* Color del borde del botón "Agregar al Carrito" */
+}
+
+.btn-primary:hover {
+    background-color: #218838; /* Color del botón al pasar el ratón */
+    border-color: #1e7e34; /* Color del borde al pasar el ratón */
+}
+
+.footer {
+    background-color: #0c4277; /* Color de fondo del pie de página */
+    color: #fff; /* Color del texto del pie de página */
+    padding: 10px 0; /* Ajuste de relleno */
+}
+
+/*+------------------/*
+/* Estilos para el menú de navegación */
+/* Cambia el color de fondo de la barra de navegación */
+
+/* Cambia el color de fondo del contenedor */
+
