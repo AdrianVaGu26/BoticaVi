@@ -23,7 +23,7 @@
 
 <body>
 <nav>
-       <a href="?opcion=opcion1"><i class='bx bxs-capsule'></i>Medicamentos</a>
+       <a href="tiendaonline copy.php"><i class='bx bxs-capsule'></i>Medicamentos</a>
         <a href="?opcion=opcion2"><i class='bx bxs-bar-chart-alt-2'></i>Ventas</a>
         <a href="?opcion=opcion3"><i class='bx bxs-truck'></i>Proveedores</a>
         <a href="?opcion=opcion4"><i class='bx bxs-file'></i>Reportes</a>

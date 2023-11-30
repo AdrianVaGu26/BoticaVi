@@ -23,7 +23,7 @@
             include "controlador/registro_user.php";
             ?>
             <center>
-                <h2>Bienvenido</h2>
+                <h2>BIENVENIDO</h2>
             </center>
             <p>Ingrese la cuenta con la que se ha registrado</p>
             <form method="POST">
