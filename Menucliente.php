@@ -101,53 +101,11 @@
         // Agrega más casos según sea necesario
 
         default:
-            echo '<div class="bienvenida">
-                    <h2>Bienvenido VidaFarma</h2>
-                    <p>Servicio de calidad y productos confiables para tu salud.</p>
-    </div>';
-            echo '<div class="contenedor">
-                    <div class="sobre">
-                        <h3 class="titulo-secciones">Sobre Nosotros</h3>
-                        <div class="nosotros">
-                            <a href="vidafarma.html" class="nosotross43">VidaFarma</a>
-                        </div>
-                    </div>';
+    include 'presentacion.php';
+    break;
 
-            echo '<div class="encuentranos">
-                        <h3 class="titulo-encuentranos">Encuéntranos</h3>
-                        <div class="direcciones">
-                            <p class="direcc">Dirección: La nueva providencia-MzA-Lt19</p>
-                        </div>
-                    </div>';
-
-            echo '<div class="seccion">
-                        <h3 class="titulo-seccion">Contáctanos</h3>
-                        <div class="contacto">
-                        <p class="whatsapp"><i class="bx bxs-phone"></i></a>Telefono: 073-321250</p>
-                            <p class="whatsapp">WhatsApp: <a href="https://wa.me/985025973"><i class="bx bxl-whatsapp"></i> Envíanos un mensaje</a></p>
-                        </div>
-                    </div>';
-
-            // Información de Métodos de Pago
-            echo '<div class="informacion-derecha">
-                        <div class="metodos-pago">
-                            <h3 class="titulo-metodos-pago">Medios de Pago</h3>
-                            <ul>
-                                <li data-tooltip="Visa"><i class="bx bxl-visa"></i></li>
-                                <li data-tooltip="Mastercard"><i class="bx bxl-mastercard"></i></li>
-                                <li data-tooltip="Efectivo"><i class="bx bx-money"></i></li>
-                                <!-- Agrega más métodos de pago según sea necesario -->
-                            </ul>
-                        </div>';
-
-            break;
     }
     ?>
 </section>
-<!-- Bloque de derechos de autor -->
-<div class="derechos-autor">
-    <p>BOTICAS IP S.A.C. - R.U.C. N° 10423237401
-    Copyright © VidaFarma 2023 Todos los derechos reservados.</p>
-</div>
 </body>
 </html>

@@ -1,34 +1,45 @@
-.contenedor {
-    display: flex;
-    width: 100%; /* Ocupa todo el ancho de la página */
+/*----------------------------METODOS DE PAGO------------  */
+.metodos-pago li {
+   /* border: 1px solid #ddd; */
+    margin: 0 30px;
+    cursor: pointer;
+    position: relative;
+    display: inline-block; /* Para que los elementos li estén en línea y se centren correctamente */
 }
 
-.sobre,
-.encuentranos,
-.seccion {
-    flex: 1;
-    text-align: center;
-    margin-right: 10px; /* Márgenes entre los elementos */
+.metodos-pago li i {
+    font-size: 24px; /* Tamaño del icono */
+    color: #9320d1; /* Color del icono */
+    border: 1px solid #9320d1; /* Borde del icono */
+    border-radius: 5px; /* Radio de borde para suavizar los bordes */
+    padding: 5px; /* Espaciado interno para separar el borde del icono */
+}
+/* Colores específicos para cada icono */
+.metodos-pago li[data-tooltip="Visa"] i {
+    color: #093654; /* Color del icono Visa */
+    border-color: #3498db; /* Borde del icono Visa */
 }
 
-.seccion {
-    margin-right: 0; /* Elimina el margen derecho del último elemento */
+.metodos-pago li[data-tooltip="Efectivo"] i {
+    color: #2ecc71; /* Color del icono Efectivo */
+    border-color: #2ecc71; /* Borde del icono Efectivo */
 }
+.tooltip {
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: nowrap;
+}
+/*------------------------------------------------------------------------------------*/
 
-.titulo-secciones,
-.titulo-encuentranos,
-.titulo-seccion {
-    color: #333;
-    font-size: 1.5em;
-    text-align: center;
-    margin-bottom: 10px;
-}
+/*------------------------------------------------------------------------------------*/
+/*WHATSAPP-------------------------------------------->*/
 
-.nosotros a {
-    color: #007bff;
-    text-decoration: none;
-}
+/*-----------------------SOBRE NOSOTROS---------------------------------->*/
 
-.nosotros a:hover {
-    text-decoration: underline;
-}
+
+
+

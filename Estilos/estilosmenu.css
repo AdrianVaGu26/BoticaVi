@@ -140,27 +140,5 @@ h2 {
     padding-left: 5px;
 }
 
-.informacion a:hover {
-    text-decoration: underline; /* Subrayar al pasar el mouse */
-}
-.informacion a i.bxl-whatsapp {
-    font-size: 24px; /* Ajusta el tamaño del icono según tus preferencias */
-    vertical-align: middle; /* Alinea verticalmente el icono con el texto */
-    margin-right: 5px; /* Agrega un pequeño margen a la derecha del icono para separarlo del texto */
-}
 
-/*WHATSAPP-------------------------------------------->*/
-.whatsapp {
-    margin-bottom: 40%; /* Añade espacio debajo del título */
-    text-align: center;
-    margin-bottom:0cqmin;
-    margin: 5px 0 5px 20px;
-}
-.contacto a {
-    color: rgb(3, 149, 24); /* Cambia el color del enlace a azul */
-    text-decoration: none; /* Quita el subrayado del enlace */
-}
-.contacto a:hover {
-    text-decoration: underline; /* Agrega subrayado al pasar el mouse sobre el enlace */
-}
-/*--------------------------------------------------------->*/
+

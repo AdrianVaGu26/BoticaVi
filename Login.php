@@ -40,7 +40,7 @@
                     </label>
                 </div>
                 <center>
-                <button type="submit" class="btn btn-primary" name="btniniciar" value="Ok">Iniciar Sesión</button>
+                <button type="submit" class="btn btn-primary" name="btniniciar" value="Ok" >Iniciar Sesión</button>
                 </center>
                 <div class="button-and-link-container">
                     <p class="create-account-link">

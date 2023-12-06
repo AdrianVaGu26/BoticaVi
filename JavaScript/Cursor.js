@@ -1,4 +1,3 @@
-// script.js
 
 document.addEventListener("DOMContentLoaded", function () {
     const metodosPagoItems = document.querySelectorAll(".metodos-pago li");

@@ -11,8 +11,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:ital,wght@0,400;0,500;1,200&display=swap" rel="stylesheet">
 </head>
 <header>
-    <h3 class="icon-title"><i class='bx bx-plus-medical'></i>
-    VIDAFarma BOTICA-PERFUMERÍA</h3>
+<h3 class="icon-title" id="regresarDefault">
+        <i class='bx bx-plus-medical'></i> VIDAFarma BOTICA-PERFUMERÍA
+    </h3>
+
+    <script>
+        document.getElementById('regresarDefault').addEventListener('click', function() {
+            window.location.href = '?opcion=default';
+        });
+    </script>
     <div class="search-container">
     <form method="GET">
         <input type="text" placeholder="Buscar por nombre..." name="nombre">
@@ -24,11 +31,11 @@
 <body>
 <nav>
        <a href="tiendaonline copy.php"><i class='bx bxs-capsule'></i>Medicamentos</a>
-        <a href="?opcion=opcion2"><i class='bx bxs-bar-chart-alt-2'></i>Ventas</a>
-        <a href="?opcion=opcion3"><i class='bx bxs-truck'></i>Proveedores</a>
-        <a href="?opcion=opcion4"><i class='bx bxs-file'></i>Reportes</a>
-        <a href="?opcion=opcion5"><i class='bx bxs-group'></i>Usuarios</a>
-        <a href="?opcion=opcion6"><i class='bx bxs-category'></i>Categorías</a>
+        <a href="?opcion=opcion1"><i class='bx bxs-bar-chart-alt-2'></i>Ventas</a>
+        <a href="?opcion=opcion2"><i class='bx bxs-truck'></i>Proveedores</a>
+        <a href="?opcion=opcion3"><i class='bx bxs-file'></i>Reportes</a>
+        <a href="?opcion=opcion4"><i class='bx bxs-group'></i>Usuarios</a>
+        <a href="?opcion=opcion5"><i class='bx bxs-category'></i>Categorías</a>
         <a href="cerrar_sesion.php"><i class='bx bxs-log-out'></i>Cerrar Sesión</a>
 </nav>
 
@@ -40,21 +47,16 @@
     // Mostrar contenido según la opción seleccionada
     switch ($opcion) {
         case 'opcion1':
-            echo '<h2>Lista de Medicamentos</h2>';
-            // Puedes agregar aquí el contenido específico para la Opción 1 (por ejemplo, lista de medicamentos)
-            break;
-
-        case 'opcion2':
             
-            echo '<h2>Categorías de Medicamentos</h2>';
+            echo '<h2>Categorías de Medicamendsdfs</h2>';
             // Puedes agregar aquí el contenido específico para la Opción 2 (por ejemplo, lista de categorías)
             break;
-            case 'opcion3':
+            case 'opcion2':
             
-                echo '<h2>Categorías de Medicamentos</h2>';
+                echo '<h2>Categorías de Medicamfsdfsentos</h2>';
                 // Puedes agregar aquí el contenido específico para la Opción 2 (por ejemplo, lista de categorías)
                 break;
-                    case 'opcion4':
+                    case 'opcion3':
                         echo '<h2>Reportes Generales</h2>';
     echo '<div class="report-options">
             <div class="report-option">
@@ -105,7 +107,7 @@
           </script>';
                        
                         break;
-                        case 'opcion5':
+                        case 'opcion4':
                             echo '<div class="container-fluid">
                             <div class="row">
                                 <div class="col-4 text-center">
@@ -156,7 +158,7 @@
                         </div>';
                             break;
 
-        case 'opcion6':
+        case 'opcion5':
             echo '<h2>Categorías de Medicamentos</h2>';
             echo '<div class="category-cards">
                     <div class="category-card">
@@ -177,9 +179,9 @@
                     </div>
                     <!-- Agrega más tarjetas según tus categorías -->
                   </div>';
-        default:#ffffff
-            echo '<h2>Bienvenido a la Farmacia</h2>';
-            // Puedes agregar aquí el contenido predeterminado
+                  break;
+        default:
+        include 'presentacion.php';
             break;
     }
     ?>
