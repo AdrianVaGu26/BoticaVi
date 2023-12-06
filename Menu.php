@@ -52,9 +52,7 @@
             // Puedes agregar aquí el contenido específico para la Opción 2 (por ejemplo, lista de categorías)
             break;
             case 'opcion2':
-            
-                echo '<h2>Categorías de Medicamfsdfsentos</h2>';
-                // Puedes agregar aquí el contenido específico para la Opción 2 (por ejemplo, lista de categorías)
+                include 'proveedor.php';
                 break;
                     case 'opcion3':
                         echo '<h2>Reportes Generales</h2>';
@@ -108,54 +106,7 @@
                        
                         break;
                         case 'opcion4':
-                            echo '<div class="container-fluid">
-                            <div class="row">
-                                <div class="col-4 text-center">
-                                    <h3 class="text-secondary">Usuarios registrados</h3>';
-                    // include "controlador/registro_persona.php";
-                    echo '        </div>
-                                <div class="col-8 mx-auto">
-                                    <div class="row">
-                                        <div class="col-12 p-4" id="tabla-personas">
-                                            <table class="table table-hover mx-auto">
-                                                <thead class="table-info">
-                                                    <tr>
-                                                        <th scope="col">ID</th>
-                                                        <th scope="col">NOMBRE</th>
-                                                        <th scope="col">APELLIDO</th>
-                                                        <th scope="col">DNI</th>
-                                                        <th scope="col">FECHA DE NACIMIENTO</th>
-                                                        <th scope="col">CORREO</th>
-                                                        <th scope="col">CONTRASEÑA</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>';
-                    include "modelo/conexion.php";
-                    $sql = $conexion->query("select * from persona");
-                    while ($datos = $sql->fetch_object()) {
-                        echo '<tr>
-                                <td>' . $datos->id_persona . '</td>
-                                <td>' . $datos->nombre . '</td>
-                                <td>' . $datos->apellido . '</td>
-                                <td>' . $datos->dni . '</td>
-                                <td>' . $datos->fecha_nac . '</td>
-                                <td>' . $datos->correo . '</td>
-                                <td>' . $datos->contraseña . '</td>
-                                <td>
-                                    <div class="btn-container">
-                                        <a href="modificar.php?id=' . $datos->id_persona . '" class="btn btn-info">Editar</a>
-                                        <a href="index.php?id=' . $datos->id_persona . '" class="btn btn-danger">Eliminar</a>
-                                    </div>
-                                </td>
-                            </tr>';
-                    }
-                    echo '          </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>';
+                           include 'Registros.php';
                             break;
 
         case 'opcion5':

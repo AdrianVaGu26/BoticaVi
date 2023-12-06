@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/Estilos/estilo.css">
+    <title>Proveedores</title>
+    <link rel="stylesheet" href="/Estilos/proveedor.css">
     
     <style>
         body {
@@ -18,20 +18,25 @@
 <body>
     <?php
     include "modelo/conexion.php";
-    include "controlador/eliminar_persona.php";
+    include "controlador/eliminar_proveedor.php";
     ?>
 
     <div class="container-fluid">
         <div class="row">
             <div class="col-4 text-center">
-                <h3 class="text-secondary">Usuarios registrados</h3>
+                <h3 class="text-secondary">Proveedores registrados</h3>
                 <?php
-             include "controlador/registro_persona.php";
-             ?>
+                // include "controlador/registro_persona.php";
+                ?>
             </div>
             <div class="col-8 mx-auto">
                 <div class="row">
                     <div class="col-12 p-4" id="tabla-personas">
+                        <!-- Agregamos el botón "Nuevo" -->
+                        <div class="text-end mb-2">
+                            <a href="Nuevo_proveedor.php" class="btn btn-primary">Nuevo</a>
+                        </div>
+
                         <table class="table table-hover mx-auto">
                             <thead class="table-info">
                                 <tr>
@@ -39,30 +44,30 @@
                                     <th scope="col">NOMBRE</th>
                                     <th scope="col">APELLIDO</th>
                                     <th scope="col">DNI</th>
-                                    <th scope="col">FECHA DE NACIMIENTO</th>
+                                    <th scope="col">RUC</th>
+                                    <th scope="col">DIRECCIÓN</th>
                                     <th scope="col">CORREO</th>
-                                    <th scope="col">CONTRASEÑA</th>
+                                    <th scope="col"></th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <?php
                                 include "modelo/conexion.php";
-                                $sql = $conexion->query("select * from persona");
+                                $sql = $conexion->query("select * from proveedores");
                                 while ($datos = $sql->fetch_object()) { ?>
                                     <tr>
-                                        <td><?= $datos->id_persona ?></td>
+                                        <td><?= $datos->id_proveedor ?></td>
                                         <td><?= $datos->nombre ?></td>
                                         <td><?= $datos->apellido ?></td>
                                         <td><?= $datos->dni ?></td>
-                                        <td><?= $datos->fecha_nac ?></td>
-                                        <td><?= $datos->correo ?></td>
-                                        <td><?= $datos->contraseña?></td>
+                                        <td><?= $datos->ruc ?></td>
+                                        <td><?= $datos->direccion ?></td>
+                                        <td><?= $datos->correo?></td>
                                         <td>
-                                        <div class="btn-container">
-    <a href="modificar.php?id=<?= $datos->id_persona ?>" class="btn btn-info">Editar</a>
-    <a href="Registros.php?id=<?= $datos->id_persona ?>" class="btn btn-danger">Eliminar</a>
-                                       </div>
-  
+                                            <div class="btn-container">
+                                                <a href="modificar.php?id=<?= $datos->id_persona ?>" class="btn btn-info">Editar</a>
+                                                <a href="proveedor.php?id_proveedor=<?= $datos->id_proveedor ?>" class="btn btn-danger">Eliminar</a>
+                                            </div>
                                         </td>
                                     </tr>
                                 <?php
@@ -72,7 +77,6 @@
                         </table>
                     </div>
                 </div>
-                
             </div>
         </div>
     </div>
