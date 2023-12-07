@@ -60,8 +60,8 @@ body {
 
 .btn-primary {
     float: right; /* Coloca el botón a la derecha */
-    border: 1px solid #007bff;
-    color: #007bff;
+    border: 1px solid rgb(5, 104, 27);
+    color: #046747;
     text-decoration: none;
     padding: 8px 15px;
     border-radius: 5px;
@@ -69,6 +69,12 @@ body {
 }
 
 .btn-primary:hover {
-    background-color: #007bff;
+    background-color: rgb(12, 126, 86);
     color: #fff;
 }
+
+
+.btn-nuevo {
+margin-right: 5px; 
+}
+    

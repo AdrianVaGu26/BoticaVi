@@ -30,7 +30,7 @@
 
 <body>
 <nav>
-       <a href="tiendaonline copy.php"><i class='bx bxs-capsule'></i>Medicamentos</a>
+       <a href="?opcion=opcion0"><i class='bx bxs-capsule'></i>Medicamentos</a>
         <a href="?opcion=opcion1"><i class='bx bxs-bar-chart-alt-2'></i>Ventas</a>
         <a href="?opcion=opcion2"><i class='bx bxs-truck'></i>Proveedores</a>
         <a href="?opcion=opcion3"><i class='bx bxs-file'></i>Reportes</a>
@@ -46,13 +46,17 @@
 
     // Mostrar contenido según la opción seleccionada
     switch ($opcion) {
+        case 'opcion0':
+            include 'Lista_Medicamentos.php';
+            break;
+        
         case 'opcion1':
             
             echo '<h2>Categorías de Medicamendsdfs</h2>';
             // Puedes agregar aquí el contenido específico para la Opción 2 (por ejemplo, lista de categorías)
             break;
             case 'opcion2':
-                include 'proveedor.php';
+                include 'Lista_proveedor.php';
                 break;
                     case 'opcion3':
                         echo '<h2>Reportes Generales</h2>';

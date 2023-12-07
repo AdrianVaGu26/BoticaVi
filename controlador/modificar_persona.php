@@ -12,7 +12,7 @@ AND !empty($_POST["fecha"])){
                                  fecha_nac='$fecha' where id_persona=$id" );
          if($sql==1) 
          {
-            header("location:Menu.php?opcion=opcion5");
+            header("location:Menu.php?opcion=opcion4");
          }else{
             echo '<div class="alert alert-danger"> Error al modificar persona</div>';
          }

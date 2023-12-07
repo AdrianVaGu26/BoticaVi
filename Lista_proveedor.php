@@ -65,8 +65,8 @@
                                         <td><?= $datos->correo?></td>
                                         <td>
                                             <div class="btn-container">
-                                                <a href="modificar.php?id=<?= $datos->id_persona ?>" class="btn btn-info">Editar</a>
-                                                <a href="proveedor.php?id_proveedor=<?= $datos->id_proveedor ?>" class="btn btn-danger">Eliminar</a>
+                                                <a href="modificar proveedor.php?id_proveedor=<?= $datos->id_proveedor ?>" class="btn btn-info">Editar</a>
+                                                <a href="Lista_proveedor.php?id_proveedor=<?= $datos->id_proveedor ?>" class="btn btn-danger">Eliminar</a>
                                             </div>
                                         </td>
                                     </tr>

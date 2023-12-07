@@ -1,5 +1,10 @@
 <?php
-if (!empty($_POST["btnregistrarmedicamentos"])) {
+if (!empty($_POST["btnregistrarmedicamentos"]) ) {
+if(!empty($_POST["nombre"]) && !empty($_POST["descripcion"]) && !empty($_POST["precio"]) &&
+!empty($_POST["descuento"]) && !empty($_POST["activo"]) && !empty($_POST["fecha_vencimiento"])
+&& !empty($_POST["stock"])&& !empty($_POST["categoria"])) {
+
+// Obtén los datos del formulario
     $nombre = $_POST["nombre"];
     $descripcion = $_POST["descripcion"];
     $precio = $_POST["precio"];
@@ -7,12 +12,7 @@ if (!empty($_POST["btnregistrarmedicamentos"])) {
     $activo = $_POST["activo"];
     $fecha_vencimiento = $_POST["fecha_vencimiento"];
     $stock = $_POST["stock"];
-    $categoria = $_POST["categoria"];
-
-    // Verificar si todos los campos obligatorios están presentes
-    if (!empty($nombre) && !empty($descripcion) && !empty($precio)
-        && isset($descuento) && isset($activo)
-        && !empty($fecha_vencimiento) && isset($stock) && !empty($categoria)) {
+    $categoria = $_POST["categoria"];;
 
         // Corregir la consulta SQL para evitar la repetición de $descuento
         $sql = $conexion->query("INSERT INTO medicamentos(nombre, descripcion, precio, descuento, activo, fecha_vencimiento, stock,categoria)

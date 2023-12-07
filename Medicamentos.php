@@ -21,32 +21,36 @@
                 include "controlador/registro_medicamentos.php";
             ?>
             <div class="col-md-6 mb-3">
-                <label for="nombre" class="form-label">Nombre del Medicamento</label>
+                <label for="exampleInputEmail1" class="form-label">Nombre del Medicamento</label>
                 <input type="text" class="form-control" id="nombre" name="nombre">
             </div>
             <div class="col-md-6 mb-3">
-                <label for="descripcion" class="form-label">Descripción</label>
+                <label for="exampleInputEmail1" class="form-label">Descripción</label>
                 <input type="text" class="form-control" id="descripcion" name="descripcion">
             </div>
             <div class="col-md-6 mb-3">
-                <label for="precio" class="form-label">Precio Unitario</label>
+                <label for="exampleInputEmail1" class="form-label">Precio Unitario</label>
                 <input type="text" class="form-control" id="precio" name="precio">
             </div>
             <div class="col-md-6 mb-3">
-                <label for="descuento" class="form-label">Descuento</label>
+                <label for="exampleInputEmail1" class="form-label">Descuento</label>
                 <input type="text" class="form-control" id="descuento" name="descuento">
             </div>
             <div class="col-md-6 mb-3">
-                <label for="activo" class="form-label">Activo</label>
+                <label for="exampleInputEmail1" class="form-label">Activo</label>
                 <input type="text" class="form-control" id="activo" name="activo">
             </div>
             <div class="col-md-6 mb-3">
-                <label for="fecha_vencimiento" class="form-label">Fecha Vencimiento</label>
+                <label for="exampleInputEmail1" class="form-label">Fecha Vencimiento</label>
                 <input type="date" class="form-control" id="fecha_vencimiento" name="fecha_vencimiento">
             </div>
             <div class="col-md-6 mb-3">
-                <label for="stock" class="form-label">Stock</label>
+                <label for="exampleInputEmail1" class="form-label">Stock</label>
                 <input type="text" class="form-control" id="stock" name="stock">
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="exampleInputEmail1" class="form-label">Categoria</label>
+                <input type="text" class="form-control" id="categoria" name="categoria">
             </div>
 
             <div class="col-12">
