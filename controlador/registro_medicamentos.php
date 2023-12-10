@@ -19,6 +19,7 @@ if(!empty($_POST["nombre"]) && !empty($_POST["descripcion"]) && !empty($_POST["p
             VALUES ('$nombre', '$descripcion', '$precio', '$descuento', '$activo', '$fecha_vencimiento', '$stock','$categoria')");
 
         if ($sql == 1) {
+            header("location: Menu.php?opcion=opcion0");
             echo '<div class="alert alert-success">Medicamento registrado correctamente</div>';
         } else {
             echo '<div class="alert alert-danger">Error al registrar medicamento</div>';
