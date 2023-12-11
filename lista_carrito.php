@@ -95,14 +95,14 @@ $lista_carrito[] = $sql->fetch(PDO::FETCH_ASSOC);
                         <td><?php echo MONEDA.number_format($precio_desc,2,'.','.');?></td>
                         <td>
                             <input type="number" min="1" max="10" step="1" value="<?php echo $cantidad ?>"
-                            size ="5" id = "cantidad_<?php echo $id;?>"onchange="">
+                            size ="5" id = "cantidad_<?php echo $id;?>"onchange="actualizacantidad(this.value,<?php echo $id; ?>)">
                         </td>
                         <td>
                             <div id="subtotal_<?php echo $id;?>" name="subtotal[]"><?php echo MONEDA.
                             number_format($subtotal,2,'.','.');?></div>
                         </td>
-                         <td><a href="#" id="eliminar" class="btn btn-warning btn-sm" data-bs-id="<?php echo 
-                         $id; ?>"data-ds-toogle="modal" data-bs-target="eliminar">Eliminar</a></td>
+                         <td><a id="eliminar" class="btn btn-warning btn-sm" data-bs-id="<?php echo $id; ?>" 
+                         data-bs-toggle="modal" data-bs-target="#eliminarModal">Eliminar</a></td>
                     </tr>
                     <?php } ?>
                    <tr>
@@ -126,18 +126,50 @@ $lista_carrito[] = $sql->fetch(PDO::FETCH_ASSOC);
         </div>
         </div>
     </main>                          
-
+<!-- Modal -->
+<div class="modal fade" id="eliminarModal" tabindex="-1" aria-labelledby="eliminarModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="eliminarModalLabel">Alerta</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ¿Desea eliminar el medicamento del carrito?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+        <button id="btn-eliminar" type="button" class="btn btn-danger" onclick="elimina()">Eliminar</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script>
-        function addProducto(id, token) {
-            var url = 'clases/carrito.php';
-            var formData = new FormData();
+     let eliminaModal = document.getElementById('eliminarModal')
+        eliminaModal.addEventListener('show.bs.modal', function(event) {
+            let button = event.relatedTarget
+            let id = button.getAttribute('data-bs-id')
+            let botonElimina = eliminaModal.querySelector('.modal-footer #btn-elimina')
+            botonElimina.value = id
+        })
+        
+
+
+
+
+
+
+        function actualizacantidad(cantidad,id) {
+            let url = 'clases/actualizar_carrito.php';
+            let formData = new FormData();
+            formData.append('action', 'agregar');
             formData.append('id', id);
-            formData.append('token', token);
+            formData.append('cantidad', cantidad);
 
             fetch(url, {
                     method: 'POST',
@@ -146,8 +178,42 @@ $lista_carrito[] = $sql->fetch(PDO::FETCH_ASSOC);
                 }).then(response => response.json())
                 .then(data => {
                     if (data.ok) {
-                        let elemento = document.getElementById("num_cart")
-                        elemento.innerHTML = data.numero;
+                        let divsubtotal = document.getElementById("subtotal_"+id)
+                        divsubtotal.innerHTML= data.sub
+
+                        let  total = 0.00
+                        let list =document.getElementsByName('subtotal[]')
+
+                        for (let i = 0; i < list.length; i++ ){
+                             total += parseFloat(list[i].innerHTML.replace(/[S/,]/g,''))
+                        }
+                        total = new Intl.NumberFormat('en-US',{
+                            minimumFractionDigits: 2
+                        }).format(total)
+                        document.getElementById('total').innerHTML= '<?php echo MONEDA; ?>'+total
+                    }
+                })
+        }
+
+        function eliminar() {
+
+             let botonElimina = document.getElementById('btn-eliminar')
+             let id = botonElimina.value
+
+            let url = 'clases/actualizar_carrito.php';
+            let formData = new FormData();
+            formData.append('action', 'agregar');
+            formData.append('id', id);
+ 
+
+            fetch(url, {
+                    method: 'POST',
+                    body: formData,
+                    mode: 'cors',
+                }).then(response => response.json())
+                .then(data => {
+                    if (data.ok) {
+                        
                     }
                 })
         }
