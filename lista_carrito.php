@@ -5,7 +5,7 @@ $db = new Database();
 $con = $db->conectar();
 
 $medicamentos = isset($_SESSION['carrito']['medicamentos'])? $_SESSION['carrito']['medicamentos'] :null;
-print_r($_SESSION);
+
 
 $lista_carrito = array();
 
@@ -18,7 +18,7 @@ $sql->execute([$clave]);
 $lista_carrito[] = $sql->fetch(PDO::FETCH_ASSOC);
 }
 }
-//session_destroy();
+
 
 ?>
 
@@ -118,12 +118,15 @@ $lista_carrito[] = $sql->fetch(PDO::FETCH_ASSOC);
          <?php } ?>
         </table>
         </div>
+        <?php if($lista_carrito != null){?>
         <div class ="row">
             <div class ="col-md-5 offset-md-7 d-grid gap-2">
-              <button class="btn btn-primary btn-lg">Realizar pago</button>
+              <a href="Pago.php" class="btn btn-primary btn-lg">Realizar pago</a>
             </div>
-
         </div>
+        <?php }?>
+
+        
         </div>
     </main>                          
 <!-- Modal -->
@@ -139,7 +142,7 @@ $lista_carrito[] = $sql->fetch(PDO::FETCH_ASSOC);
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-        <button id="btn-eliminar" type="button" class="btn btn-danger" onclick="elimina()">Eliminar</button>
+        <button id="btn-eliminar" type="button" class="btn btn-danger" onclick="eliminar()">Eliminar</button>
       </div>
     </div>
   </div>
@@ -154,16 +157,10 @@ $lista_carrito[] = $sql->fetch(PDO::FETCH_ASSOC);
         eliminaModal.addEventListener('show.bs.modal', function(event) {
             let button = event.relatedTarget
             let id = button.getAttribute('data-bs-id')
-            let botonElimina = eliminaModal.querySelector('.modal-footer #btn-elimina')
-            botonElimina.value = id
+            let buttonElimina = eliminaModal.querySelector('.modal-footer #btn-eliminar')
+            buttonElimina.value = id
         })
         
-
-
-
-
-
-
         function actualizacantidad(cantidad,id) {
             let url = 'clases/actualizar_carrito.php';
             let formData = new FormData();
@@ -196,13 +193,12 @@ $lista_carrito[] = $sql->fetch(PDO::FETCH_ASSOC);
         }
 
         function eliminar() {
-
              let botonElimina = document.getElementById('btn-eliminar')
              let id = botonElimina.value
 
             let url = 'clases/actualizar_carrito.php';
             let formData = new FormData();
-            formData.append('action', 'agregar');
+            formData.append('action', 'eliminar');
             formData.append('id', id);
  
 
@@ -213,7 +209,7 @@ $lista_carrito[] = $sql->fetch(PDO::FETCH_ASSOC);
                 }).then(response => response.json())
                 .then(data => {
                     if (data.ok) {
-                        
+                        location.reload()
                     }
                 })
         }

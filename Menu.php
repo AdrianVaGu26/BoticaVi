@@ -35,7 +35,7 @@
         <a href="?opcion=opcion2"><i class='bx bxs-truck'></i>Proveedores</a>
         <a href="?opcion=opcion3"><i class='bx bxs-file'></i>Reportes</a>
         <a href="?opcion=opcion4"><i class='bx bxs-group'></i>Usuarios</a>
-        <a href="?opcion=opcion5"><i class='bx bxs-category'></i>Categorías</a>
+        <a href="Lista_categorias.php"><i class='bx bxs-category'></i>Categorías</a>
         <a href="cerrar_sesion.php"><i class='bx bxs-log-out'></i>Cerrar Sesión</a>
 </nav>
 

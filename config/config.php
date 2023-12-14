@@ -1,5 +1,6 @@
 <?php 
-
+defined("CLIENT_ID") || define("CLIENT_ID","AZbUsQRwUlpX8pgULDaqpYQ7ZjiOVWAsZ1vdpqmYDFjusN7aoSpA5deocfPXoz8tBQy0y-n9TYzUFcoD");
+define("CURRENCY","MXN");
 define("KEY_TOKEN","SDSNMAVG-2009*");
 define("MONEDA","S/");
 

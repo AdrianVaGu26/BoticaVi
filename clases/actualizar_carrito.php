@@ -16,8 +16,8 @@ if($action =='agregar'){
         $datos['ok']= false;
     }
     $datos ['sub'] = MONEDA.number_format($respuesta,2,'.',',');
-} else if ($action = 'eliminar'){
-
+} else if ($action == 'eliminar'){
+    $datos['ok']=eliminar($id);
 }else{
     $datos['ok']= false;
 }
@@ -52,8 +52,13 @@ if(isset($_SESSION['carrito']['medicamentos'][$id])){
 
 }
 
-function eliminar ($id){
+function eliminar($id){
     if($id > 0){
-        
+if(isset($_SESSION['carrito']['medicamentos'][$id])){
+    unset ($_SESSION['carrito']['medicamentos'][$id]);        
+        return true;
+        }
+    }else{
+        return false;
     }
 }
