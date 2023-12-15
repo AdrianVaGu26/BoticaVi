@@ -21,16 +21,16 @@ session_destroy();
     <title>Tienda Online</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link href="/Estilos/estilomedicamentos.css" rel="stylesheet">
+    <link href="estilomedicamentos.css" rel="stylesheet">
 </head>
 <body>
 
  <!-- Menu de navegación -->
  <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a href="tiendaonline.php" class="navbar-brand"> 
-                <strong>Medicamentos</strong>
+                <strong>Tienda de medicamentos</strong>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navBarTop" aria-controls="navBarTop" aria-expanded="false">
                 <span class="navbar-toggler-icon"></span>
@@ -38,11 +38,6 @@ session_destroy();
 
             <div class="collapse navbar-collapse" id="navbarHeader">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a href="tiendaonline.php" class="nav-link active">Medicamentos y Perfumes </a>
-                    </li>
-
-                    
                 </ul>
                 <a href="lista_carrito.php" class="btn btn-primary btn-sm me-2">
                     <i class="fas fa-shopping-cart"></i> Carrito <span id="num_cart" class="badge bg-secondary"><?php echo $num_cart; ?></span>
@@ -124,7 +119,4 @@ session_destroy();
     
 </body>
 </html>
-
-
-
 

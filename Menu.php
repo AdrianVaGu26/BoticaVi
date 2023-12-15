@@ -20,18 +20,12 @@
             window.location.href = '?opcion=default';
         });
     </script>
-    <div class="search-container">
-    <form method="GET">
-        <input type="text" placeholder="Buscar por nombre..." name="nombre">
-        <button type="submit"><i class='bx bx-search'></i></button>
-    </form>
-</div>
+    
 </header>
 
 <body>
 <nav>
        <a href="?opcion=opcion0"><i class='bx bxs-capsule'></i>Medicamentos</a>
-        <a href="?opcion=opcion1"><i class='bx bxs-bar-chart-alt-2'></i>Ventas</a>
         <a href="?opcion=opcion2"><i class='bx bxs-truck'></i>Proveedores</a>
         <a href="?opcion=opcion3"><i class='bx bxs-file'></i>Reportes</a>
         <a href="?opcion=opcion4"><i class='bx bxs-group'></i>Usuarios</a>

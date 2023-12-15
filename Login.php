@@ -43,11 +43,6 @@
                 <button type="submit" class="btn btn-primary" name="btniniciar" value="Ok" >Iniciar Sesión</button>
                 </center>
                 <div class="button-and-link-container">
-                    <p class="create-account-link">
-                        <a href="recuperar_contraseña.php">¿Olvidaste tu contraseña?</a>
-                    </p>
-                </div>
-                <div class="button-and-link-container">
                 <p class="create-account-link">
                     <a href="register.user.php">Crear cuenta</a>
                 </p>
